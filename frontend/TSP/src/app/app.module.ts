@@ -20,9 +20,6 @@ import { QuestionsComponent } from './questions/questions.component';
 import { ComplaintComponent } from './complaint/complaint.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,10 +36,10 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
     QuestionsComponent,
     ComplaintComponent,
     ChatbotComponent,
-    
-   
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,

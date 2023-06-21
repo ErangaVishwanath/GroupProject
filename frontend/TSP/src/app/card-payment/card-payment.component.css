@@ -1,0 +1,121 @@
+.card {
+    margin: 60px;
+    margin-left: 150px;
+    width: 380px;
+    height: 400px;
+}
+
+
+.innerCard {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+button {
+    background-color: rgba(169, 169, 167, 0.826);
+    width: 140px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.cancelBtn {
+    background-color: rgb(232, 107, 96);
+    border: solid rgb(232, 107, 96);
+}
+
+.cancelBtn:hover {
+    background-color: #FF6600;
+    border: solid #FF6600;
+}
+
+.payBtn {
+    background-color: rgb(108, 164, 234);
+    border: solid rgb(108, 164, 234);
+}
+
+.payBtn:hover {
+    background-color: rgb(30, 124, 239);
+    border: solid rgb(30, 124, 239);
+}
+
+
+h5 {
+    margin: 10px;
+    font-size: medium;
+}
+
+
+p{
+        position: relative;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-size: 2em;
+        letter-spacing: 4px;
+        overflow: hidden;
+        background: linear-gradient(90deg, #000, #86cce6, #261874);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: animate 3s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(22, 45, 126, 0);
+      }
+      
+      @keyframes animate {
+        0% {
+          background-position: -500%;
+        }
+        100% {
+          background-position: 500%;
+        }
+      }
+
+hr {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+table {
+    font-size: 15px;
+}
+
+.detail {
+    margin-bottom: 200px;
+}
+
+td {
+    align-items: center;
+    width: 30%;
+}
+
+.radioBtn {
+    align-items: center;
+    width: 30%;
+}
+
+input[type="number"] {
+    width: 160%;
+    margin: 3px;
+}
+
+input[type="password"] {
+    width: 160%;
+    margin: 3px;
+}
+
+.container {
+    display:flex;
+    align-items: left;
+  }
+ 
+  video{
+    width: 100%;
+    padding: 10%;
+  }
+  .video-container {
+    text-align: right;
+  }
+  

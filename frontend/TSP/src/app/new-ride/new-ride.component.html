@@ -1,0 +1,102 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="assets\newRide.jpg" class="image">
+      </div>
+      <div class="col">
+        <h2 class="list-group-head">New Ride</h2>
+            <h5 class="list-group-head">Are you available for a Ride?</h5>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" (click)="toggleActive(1)" [class.active]="activeButton ==1"
+                    class="btn btn-secondary">Yes</button>
+                <button type="button" (click)="toggleActive(2)" [class.active]="activeButton ==2"
+                    class="btn btn-secondary">No</button>
+            </div>
+
+            <div class="list-group">
+                <a href="#" routerLink="/pickup" routerLinkActive="active"  class="list-group-item list-group-item-action flex-column align-items-start"
+                    (click)="toggleActive(1)">
+                    <div br class="d-flex w-100 justify-content-between">
+                        <table>
+                            <td class="column2">
+                                <tr>
+                                    <h5 class="mb-1">New Ride</h5>
+                                </tr>
+                                <tr>
+                                    <p class="mb-1">4 min (1km)</p>
+                                </tr>
+                                <tr><small class="text-muted">To Pickup: Kottawa</small></tr>
+                            </td>
+                            <td class="column2">
+                                <tr>
+                                    <h5>$21 Earnings </h5>
+                                </tr>
+                                <tr>
+                                    <p class="mb-1">30 min (10.4km)</p>
+                                </tr>
+                                <tr><small class="text-muted">To Ride: Moratuwa</small></tr>
+                            </td>
+                        </table>
+                        <small>3 minutes ago</small>
+
+                    </div>
+                </a>
+      </div>
+
+      <a href="#" routerLink="/pickup" routerLinkActive="active"  class="list-group-item list-group-item-action flex-column align-items-start"
+                    (click)="toggleActive(1)">
+                    <div br class="d-flex w-100 justify-content-between">
+                        <table>
+                            <td class="column2">
+                                <tr>
+                                    <h5 class="mb-1">New Ride</h5>
+                                </tr>
+                                <tr>
+                                    <p class="mb-1">2 min (300m)</p>
+                                </tr>
+                                <tr><small class="text-muted">To Pickup: Pannipitiya</small></tr>
+                            </td>
+                            <td class="column2">
+                                <tr>
+                                    <h5>$8 Earnings </h5>
+                                </tr>
+                                <tr>
+                                    <p class="mb-1">17 min (1.2km)</p>
+                                </tr>
+                                <tr><small class="text-muted">To Ride: Maharagama</small></tr>
+                            </td>
+                        </table>
+                        <small>5 minutes ago</small>
+
+                    </div>
+                </a>
+                <a href="#" routerLink="/pickup" routerLinkActive="active" class="list-group-item list-group-item-action flex-column align-items-start"
+                    (click)="toggleActive(1)">
+                    <div br class="d-flex w-100 justify-content-between">
+                        <table>
+                            <td class="column2">
+                                <tr>
+                                    <h5 class="mb-1">New Ride</h5>
+                                </tr>
+                                <tr>
+                                    <p class="mb-1">2 min (350m)</p>
+                                </tr>
+                                <tr><small class="text-muted">To Pickup: Kottawa</small></tr>
+                            </td>
+                            <td class="column2">
+                                <tr>
+                                    <h5>$3 Earnings </h5>
+                                </tr>
+                                <tr>
+                                    <p class="mb-1">4 min (0.4km)</p>
+                                </tr>
+                                <tr><small class="text-muted">To Ride: Mahalwarawa</small></tr>
+                            </td>
+                        </table>
+                        <small>6 minutes ago</small>
+
+                    </div>
+                </a>
+            </div>
+
+    </div>

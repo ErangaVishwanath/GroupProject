@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { PassengerProfileDefaultComponent } from './passenger-profile-default/passenger-profile-default.component';
 import { PassengerEditComponent } from './passenger-edit/passenger-edit.component';
 import { AnothereEmailComponent } from './anothere-email/anothere-email.component';

@@ -1,0 +1,44 @@
+<head>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Add Card to content  -->
+    <div class="card">
+        <div class="card-body"> 
+          <h2 class="card-title">Meet your Taxi</h2>
+          <table>
+            <tr>
+              <th class="equalwidth">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Rider Details: 
+                      <p class="details">Mr.Lal</p>
+                      <p class="details">ABC 6107</p>
+                  </li>
+                </ul>  
+              </th>
+              <th class="equalwidth"> 
+                <img [src]="TaxiDriverSrc" class="card-img-top w-75" alt="Taxi Driver Image">
+              </th>
+            </tr>
+          <br>
+          
+        </table>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Your taxi will pick you up in 5 minuts</li>
+            <li class="list-group-item">
+                <button class="btn"><i class="fa fa-phone"></i> Call</button>
+                <button class="btn"><i class="fa fa-comment"></i> Message</button>
+                <button class="btn"><i class="fa fa-user"></i> View Rider</button>
+            </li>
+            <li class="list-group-item">From: Kottawa</li>
+            <li class="list-group-item">To: Moratuwa</li>
+            <li class="list-group-item">Total: $50</li>
+          </ul>
+        </div>
+       
+      
+        <button class="cancelBtn" routerLink="/origin" routerLinkActive="active"> Cancel</button>
+      </div>
+</body>

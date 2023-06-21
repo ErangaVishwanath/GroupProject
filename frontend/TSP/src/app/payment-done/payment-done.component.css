@@ -1,0 +1,58 @@
+.card{
+    margin: 70px ;
+    margin-left: 550px;
+    width: 380px;
+    height: 550px;
+    color: rgb(13, 39, 88);
+}
+.card-body{
+    margin-bottom: 0px;
+}
+.card-img-top{
+    height: 280px;
+}
+
+.list-group-item{
+    border: none;
+}
+button{
+    background-color: #a9a9a7d3;
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    color: rgb(41, 36, 29);
+  }
+  
+button:hover span {
+    padding-right: 25px;
+  }
+  button:hover{
+    background-color: orange;
+  }
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+h5{
+  color: rgba(46, 81, 188, 0.889);
+}
+
+  

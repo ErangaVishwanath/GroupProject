@@ -1,0 +1,79 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 text-center mb-5">
+            <h3 class="animate-charcter"> Contact Us</h3>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-lg-7 mx-auto">
+            <div class="card mt-2 mx-auto p-4 bg-light mb-5">
+                <div class="card-body bg-light">
+
+                    <div class="container">
+                        <form id="contact-form" [formGroup]="form" (ngSubmit)="submit()">
+
+
+
+                            <div class="controls">
+
+                                <div class="row mb-3">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_name">Name </label>
+                                            <input id="form_name" type="text" name="name" class="form-control"
+                                                placeholder="Please enter your name " required="required"
+                                                formControlName="name" data-error="Firstname is required.">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_email">Email </label>
+                                            <input id="form_email" type="email" name="email" class="form-control"
+                                                placeholder="Please enter your email " required="required"
+                                                formControlName="email" data-error="Valid email is required.">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Write Your Message Here </label>
+                                            <textarea id="form_message" name="message" class="form-control"
+                                                placeholder="Write your message here." rows="4" required="required"
+                                                formControlName="message"
+                                                data-error="Please, leave us a message."></textarea>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-16 form-group">
+
+                                        <input [disabled]="!form.valid" type="submit" class="btn btn-primary btn-send  pt-1 btn-block mt-3
+                                    " value="Send Message">
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="video mb-5">
+                <video class="cont" src="assets/Video 2.mp4" autoplay loop></video>
+            </div>
+            <!-- /.8 -->
+
+        </div>
+        <!-- /.row-->
+
+    </div>
+</div>

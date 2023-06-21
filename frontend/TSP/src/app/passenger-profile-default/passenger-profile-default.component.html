@@ -1,0 +1,55 @@
+<div class="container px-5 rounded bg-white mt-0 mb-5 ">
+    <div class="row">
+        <!--side navigation-->
+        <div class="col-md-3 border-right mt-5 pt-5">
+            <div class="list-group list-group-flush sidebar">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3 Dashboard side-list-item" href="#!">Ride Now</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3 side-list-item" href="#!">My Activities</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3 side-list-item" href="#!">Payment Method</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3 activeTab side-list-item ">My Profile</a>
+            </div>
+        </div>
+        
+        <div class="col-md-5 border-right">
+            <form action="" class="form-horizontal">
+                <div class="p-3 py-5">
+                    <!--name and profile picture-->
+                    <div class="d-flex justify-content-between align-items-center mb-0 form-group">
+                        <img  src="assets\profile4to.jpg" alt="" width="100px">
+                        <h3 class="text-right name">{{passenger.firstName}} {{passenger.lastName}}</h3>
+                        <a routerLink="/PassengerEdit"><button class="btn btn-primary profile-button edit" type="button">Edit</button></a>
+                    </div>
+                    <!--Details-->
+                    <div class="row mt-0">
+                        <div class="col-md-12 mb-3 form-group"><label class="labels mb-2">Mobile Number</label><input type="text" class="form-control" value="{{passenger.mobile}}" disabled></div>
+                        <div class="col-md-12 mb-2 form-group"><label class="labels">Email</label> <br><label class="email">{{passenger.email}}</label></div>
+                        <div class="col-md-12 mb-2 form-group"><label class="labels">Another Email</label> <br><label class="email">{{passenger.anotheremail}}</label></div>
+                        <a href=""><button class="btn btn-primary btndefault  mb-3" type="button" disabled>Add another email</button></a>
+                        <div class="col-md-12 form-group"><label class="labels">Change Password</label><br> 
+                        <a routerLink="/ChangePassword"><button class="btn btn-primary btndefault mt-2 mb-3 " type="button">Update</button></a></div> 
+                    </div>
+                    <div class="row mt-4 form-group">
+                        <div class="col-md-6"><label class="labels mb-2">Location</label><input type="text" class="form-control" value="{{passenger.location}}" placeholder="State" disabled></div>
+                    </div>
+                    <!--buttons-->
+                    <hr>
+                    <div class="mt-4 text-center"><button class="btn btn-danger" type="button">Log Out</button></div>
+                </div>
+            </form>
+        </div>
+        <!--side picture with link-->
+        <div class="col-md-4">
+            <div class="p-3 py-5  ">
+                <div class="px-5">
+                    <img src="assets\taxi1.jpeg" alt="" width="350px">
+                </div>
+                <div class="sidetext">
+                    <h5 id="text-left ">Get a ride in one minute</h5>
+                    <p id="text-left-p">Click here to get a ride  from the web browser</p>
+                    <a href=""><button class="btn btn-primary request " type="button">Request Ride</button></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

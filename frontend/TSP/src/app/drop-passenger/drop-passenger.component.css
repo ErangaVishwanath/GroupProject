@@ -1,0 +1,64 @@
+.card{
+    margin: 60px ;
+    margin-left: 530px;
+    width: 380px;
+    height: 550px;
+}
+.card-body{
+    margin-bottom: 0px;
+}
+
+.list-group-flush{
+    font-size: larger;
+    margin-top: 28px;
+  }
+
+.details{
+    font-size: 14px;
+    color: rgb(152, 149, 149);
+}
+
+.suc{
+    background-color: rgba(169, 169, 167, 0.826);
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+.suc span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .suc span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    color: rgb(41, 36, 29);
+  }
+  
+
+  .suc:hover{
+    background-color: orange;
+  }
+  
+  .suc:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.suc{
+    background-color: rgba(169, 169, 167, 0.826);
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+.equalwidth{
+  width: 50%;
+}

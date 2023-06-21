@@ -1,0 +1,18 @@
+<section class="gradient-custom ">
+
+    <h1 class="topic"><b> Welcome to Chat with our TSP Team </b></h1>
+    <div class="pt-2 ">
+        <ng-container *ngFor="let message of messages">
+            <div class="message" [ngClass]="{ 'from': message.author === 'bot',
+                        'to': message.author === 'user' }">
+                {{ message.content }}
+            </div>
+        </ng-container>
+    </div>
+    <label *ngIf="messages.length == 0; else dialogInfo" for="nameField">Start your conversation by saying "Hi"</label>
+    <input [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text" >
+    <button (click)="sendMessage()" class="btn-primary">Send</button>
+    <ng-template #dialogInfo>
+        <span [className]="'float-right'">Total messages: {{messages.length}} </span>
+    </ng-template>
+</section>

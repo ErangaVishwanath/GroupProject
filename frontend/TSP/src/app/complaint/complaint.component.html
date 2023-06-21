@@ -1,0 +1,35 @@
+<div class="mainDiv">
+    <div class="cardStyle">
+
+        <h2 class="formTitle">
+            Post Your Complaint Here...
+        </h2>
+        <form id="contact-form" [formGroup]="formt" (ngSubmit)="submit()">
+            <div class="controls">
+                <div class="inputDiv form-group">
+                    <label class="inputLabel" for="type">We apologize for any inconvenience caused. Then post your complaint here</label>
+                </div>
+
+                <div class="inputDiv form-group">
+                    <label class="inputLabel" for="type">Date </label>
+                    <input id="date" type="date" name="date" class="form-control" formControlName="date">
+                </div>
+
+                <div class="inputDiv form-group">
+                    <label class="inputLabel" for="Description">Complaint</label>
+                    <textarea id="area" name="area" class="form-control" formControlName="description" rows="4" cols="50"
+                         required="required"></textarea>
+                </div>
+
+                <div class="form-group buttonWrapper">
+                    <!-- <button type="submit" class="btn btn-info custom-btn submitButton">
+                    Submit
+                </button> -->
+                    <input [disabled]="!formt.valid" type="submit" class="btn btn-info custom-btn submitButton"
+                        value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

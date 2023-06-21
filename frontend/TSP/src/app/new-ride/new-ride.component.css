@@ -1,0 +1,29 @@
+.image {
+  width: 450px;
+  margin-left: 0px;
+  margin-top: 200px;
+}
+
+h2 {
+  margin-top: 90px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #1a2238;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.active,
+.btn:hover {
+  background-color: #0c8ce9;
+  color: white;
+}
+
+.column2{
+  width: 200px;
+}

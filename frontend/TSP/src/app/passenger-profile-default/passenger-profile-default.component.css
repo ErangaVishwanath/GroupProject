@@ -1,0 +1,120 @@
+body {
+    background: rgb(99, 39, 120)
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: #146C94;
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #2F58CD
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px;
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+.name{
+   margin-right: 100px;
+}
+
+.edit{
+    margin-left:-50px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2px 20px 2px 20px;
+    background-color:#05054c;
+    color: #fff;
+    border:none;
+    border-radius:8px;
+    font-weight:normal;   
+}
+.edit:hover {
+    background-color:rgb(0, 145, 255);
+}
+
+.activeTab{
+    background-color: rgba(128, 128, 128, 0.407);
+    border-left:5px solid black;
+}
+
+.sidebar{
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.side-list-item{
+    color: #0a0a23;
+}
+
+.sidetext{
+    margin-left: 100px;
+}
+
+#text-left{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    margin-bottom: -4px;
+}
+#text-left-p{
+    color: rgba(128, 128, 128, 0.933)
+}
+.request{
+    padding: 10px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color:black;
+    border-color: #0a0a23;
+}
+.request:hover{
+    background-color: rgb(53, 53, 53);
+}
+.form-control{
+    background-color:rgba(210, 209, 209, 0.415);
+    border: none;
+}
+.labels{
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+.col-md-6{
+    margin-top: -25px;
+}
+
+.btndefault{
+    color: black;
+    background-color:rgba(156, 154, 154, 0.722);
+    border-color: rgba(156, 154, 154, 0.36);
+}
+.btndefault:hover{
+    background-color: rgb(132, 129, 129);
+}

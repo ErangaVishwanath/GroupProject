@@ -1,0 +1,46 @@
+<div class="mainDiv">
+    <div class="cardStyle">
+
+        <h2 class="formTitle">
+            Lost Property Details
+        </h2>
+        <form id="contact-form" [formGroup]="formt" (ngSubmit)="submit()">
+            <div class="controls">
+                <div class="inputDiv form-group">
+                    <label class="inputLabel" for="type">Property Type</label>
+                    <input id="name" type="text" name="name" class="form-control" formControlName="name">
+                </div>
+                <div class="inputDiv form-group">
+                    <label class="inputLabel" for="type">Date of Loss of Property</label>
+                    <input id="date" type="date" name="date" class="form-control" formControlName="date">
+                </div>
+                <div class="inputDiv form-group">
+                    <label class="inputLabel" for="form_email">Email </label>
+                    <input id="form_email" type="email" name="email" class="form-control"
+                        placeholder="Please enter your email " required="required"
+                        formControlName="email" data-error="Valid email is required.">
+                </div>
+
+                <!-- <div class="inputDiv form-group">
+                    <label class="inputLabel" for="type">Date of loss of property</label>
+                    <input id="date" type="text" name="date" class="form-control" formcontrolName="date" >
+                </div> -->
+
+                
+                <div class="inputDiv form-group">
+                    <label class="inputLabel" for="Description">Description of the Property</label>
+                    <textarea id="area" name="area" class="form-control" rows="4" cols="50" formControlName="description"></textarea>
+                </div>
+
+                <div class="form-group buttonWrapper">
+                    <!-- <button type="submit" class="btn btn-info custom-btn submitButton">
+                    Submit
+                </button> -->
+                    <input [disabled]="!formt.valid" type="submit" class="btn btn-info custom-btn submitButton"
+                        value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>

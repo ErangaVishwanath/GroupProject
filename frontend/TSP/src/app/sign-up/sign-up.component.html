@@ -1,0 +1,94 @@
+<div class="outer">
+    <div class="navbar">
+        <h2 id="companyname">TSP</h2>
+        <div class="nav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Help</a>
+            <button class="btnLogin-popup" routerLink="/sign-in">Sign In</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+                <div class="panel">
+                    <div class="heading">
+                        <h2 class="Signup">Sign Up</h2>
+                    </div>
+                    <div class="body">
+                        <form [formGroup]="LoginForm">
+                            <div class="inputs">
+                                <label for="exampleInputEmail1" class="form-label1">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" name="Email" formControlName="email">
+                                <label class="text-danger error-email" *ngIf="getError(LoginForm.get('email'))">
+                                  {{
+                                      getError(LoginForm.get('email'))
+                                  }}
+                                </label>
+                            </div>
+                            <div class="bb">
+                              <h4>Create your account password</h4>
+                              <p>Your password must be at least 8 characters long and contain at least one letter and one digit</p>
+                              <div class="inputs">
+                                <label class="form-label2">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"  name="password" formControlName="password" maxlength="20">
+                                <label class="text-danger error-password" *ngIf="getpasswordError(LoginForm.get('password'))">
+                                  {{
+                                      getpasswordError(LoginForm.get('password'))
+                                  }}
+                              </label>
+                              </div>
+                              <div class="inputs">
+                                <label class="form-label3">Re-Enter Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" name="reenterpassword" formControlName="reenterpassword" maxlength="20">
+                                <label class="text-danger error-password" *ngIf="getrepasswordError(LoginForm.get('reenterpassword'))">
+                                  {{
+                                      getrepasswordError(LoginForm.get('reenterpassword'))
+                                  }}
+                              </label>
+                              </div>
+                            </div>
+                            <div class="t">Already have account?
+                                <a id="forget" routerLink="/sign-in">Sign In</a>
+                            </div>
+                            <div class="signup">
+                              <button type="submit" class="btn btn-primary" routerLink="/OTP" (click)="onSubmit()">Enter</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="footer">
+            <a href="">T & C</a>
+            <a href="">Privacy policy</a>
+            <a href="">Software service Agreement</a>
+            <a href="">Careers</a>
+            <a href="">Contact Us</a>
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+  
+  
+
+
+
+
+   <!-- <div *ngIf="!isEmailSent">
+    <input type="email" [(ngModel)]="email" placeholder="Email" required>
+    <button (click)="sendVerificationEmail()">Send Verification Email</button>
+  </div>
+  
+  <div *ngIf="isEmailSent && !isVerificationComplete">
+    <p>A verification email has been sent to {{ email }}.</p>
+    <p>Please check your email and click the verification link.</p>
+    <p>If you don't receive the email, make sure to check your spam folder.</p>
+    <p>Once verified, you'll be able to proceed.</p>
+  </div>
+  
+  <div *ngIf="isVerificationComplete">
+    <p>Email verified successfully! You can now proceed.</p>
+  </div> -->

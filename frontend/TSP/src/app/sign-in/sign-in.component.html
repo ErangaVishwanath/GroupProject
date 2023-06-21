@@ -1,0 +1,64 @@
+<div class="outer">
+    <div class="navbar">
+        <h2 id="companyname">TSP</h2>
+        <div class="nav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Help</a>
+            <button class="btnLogin-popup" routerLink="/sign-up">SignUp</button>
+        </div>
+    </div>
+    <img class="image" src="https://cyverseuk.org/wp-content/uploads/2019/02/woman_2_working_laptop-768x829.png">
+    <div class="container">
+        <div class="row">
+            <div class="panel">
+                <div class="heading">
+                    <h2 class="Signin">Sign In</h2>
+                </div>
+                <div class="body">
+                    <form [formGroup]="LoginForm" (ngSubmit)="submit()">
+                        <div class="inputs form-group">
+                            <span class="icon"><i class="fa-solid fa-envelope" style="color: #fff;"></i></span>
+                            <input type="email" id="email" name="email" formControlName="email" class="form-control feild" placeholder="Email">
+                            <label class="text-danger error-email" *ngIf="getError(LoginForm.get('email'))">
+                                {{
+                                    getError(LoginForm.get('email'))
+                                }}
+                            </label>
+                        </div>
+                        <div class="inputs form-group">
+                            <span class="icon"><i class="fa-solid fa-lock" style="color: #fff;"></i></span>
+                            <input type="password" formControlName="password" class="form-control feild" id="password" name="password" placeholder="Password" maxlength="20">
+                            <label class="text-danger error-password" *ngIf="getpasswordError(LoginForm.get('password'))">
+                                {{
+                                    getpasswordError(LoginForm.get('password'))
+                                }}
+                            </label>
+                        </div>
+                        <div class="forget">
+                            <a id="forget" class="forget" routerLink="/forgetpassword">Forget Password</a>
+                        </div>
+                        <div class="t">Don't have account?
+                            <a id="forget" routerLink="/sign-up">Sign Up</a>
+                        </div>
+                        <div class="form-group">
+                            <button  type="submit" value="Login" class="btn btn-primary form-group" [disabled]="!LoginForm.valid">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="">T & C</a>
+        <a href="">Privacy policy</a>
+        <a href="">Software service Agreement</a>
+        <a href="">Careers</a>
+        <a href="">Contact Us</a>
+        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>

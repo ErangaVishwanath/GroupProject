@@ -1,0 +1,44 @@
+<head>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Dropoff Passenger</h2>
+      <table>
+        <tr>
+          <th class="equalwidth">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Passenger Details:
+                <br>
+                <br>
+                <p class="details">Ms. Sithumi </p>
+              </li>
+            </ul>
+          </th>
+          <th class="equalwidth">
+            <img [src]="Passenger" class="card-img-top w-75" alt="Passenger Image">
+          </th>
+        </tr>
+        <br>
+
+      </table>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">4 Minutes to Dropoff Point.</li>
+        <li class="list-group-item">
+          <button class="btn"><i class="fa fa-phone" onclick="location.href='https://web.whatsapp.com/'" target="_blank"
+              rel="noopener noreferrer"></i> Call</button>
+          <button class="btn"><i class="fa fa-comment" onclick="location.href='https://web.whatsapp.com/'"
+              target="_blank" rel="noopener noreferrer"></i> Message</button>
+          <button class="btn"><i class="fa fa-user" routerLink="" routerLinkActive="active"></i> View Profile</button>
+        </li>
+        <li class="list-group-item">From: Kottawa</li>
+        <li class="list-group-item">To: Moratuwa</li>
+        <li class="list-group-item">Total: $50</li>
+      </ul>
+    </div>
+    <button class="suc" routerLink="/" routerLinkActive="active"> Rate Passenger</button>
+  </div>
+</body>

@@ -1,0 +1,64 @@
+<div class="outer">
+    <div class="navbar">
+        <h2 id="companyname">TSP</h2>
+        <div class="nav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Help</a>
+            <button class="btnLogin-popup" routerLink="/sign-in">Sign In</button>
+        </div>
+    </div>
+    <div class="image">
+        <img src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_1152,h_270/v1542245648/assets/c0/dc37b5-8c90-4bfe-ba27-a8530494a7d6/original/illustration_hero_promotionsHowTheyWork_desktop.svg" width="100%" height="300">
+        <div class="paragraph">
+            <p>
+                Transport Service Provider is a partnership programme with small and medium businesses 
+                in Canada, to take over their transport requirements as a reliable logistic provider. 
+                By using the existing fleet, we will undertake the transport on behalf of the e-commerce 
+                merchants to ease their mind by removing the responsibility of handling the complexities 
+                of transport. The Last-mile partnership will allow the entrepreneurs to focus more on 
+                their core business products and services and reach a wider market through TSP domestic 
+                coverage.
+            </p>
+        </div>
+    </div>
+    
+    <div class="card">
+         <span class="icon"><i class="fa-solid fa-shield-halved fa-2xl"></i></span>
+        <div class="card-body">
+          <h5 class="card-title">Accept TSP's Terms <br>& Review Privacy <br> Notice </h5>
+          <p class="card-text">By selecting 'I Agree' below, i have reviewed and agree to the 
+            <a href="">Terms of Use </a>
+            and acknowledge the 
+            <a href="">Privacy Notice</a>
+            . Iam at least 18 years of age.</p>
+            <!-- <div class="tick">
+                <input type="checkbox"> I agree
+            </div> -->
+
+            <div class="tick">
+                <mat-checkbox name="Agree" value="Agree" [disabled]="disabled" [(ngModel)]="checked" (change)="onChange($event)">I agree</mat-checkbox>
+            </div>
+            <div class="signup">
+                <button type="button" class="btn btn-primary" *ngIf="checked" routerLink="/transportmedia">SignUp</button>
+            </div>
+
+            <!-- <div class="signup">
+                <button type="button" class="btn btn-primary" disabled>SignUp</button>
+            </div> -->
+        </div>
+    </div>
+    
+    <div class="footer">
+        <a href="">T & C</a>
+        <a href="">Privacy policy</a>
+        <a href="">Software service Agreement</a>
+        <a href="">Careers</a>
+        <a href="">Contact Us</a>
+        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>

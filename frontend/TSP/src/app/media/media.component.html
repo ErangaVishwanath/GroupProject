@@ -1,0 +1,105 @@
+<div class="outer">
+    <div class="bg-dark py-5">
+      <div class="container px-8">
+        <div class="row gx-5 align-items-center justify-content-center">
+          <div class="col-lg-8 col-xl-7 col-xxl-6">
+            <div class="my-5 text-center text-xl-start">
+                <h1 class="display-6 fw-bolder text-white mb-2">
+                    Available Transport Media
+                </h1>
+                
+                <p class="text-head lead fw-normal text-white-50 mb-4">
+                    We provide comprehensive and compassionate care whenever you need it
+                </p>
+                <p class="text lead fw-normal text-white mb-5">
+                    You should start with the longitude and latitude. Then you may see which Taxis are available. You can choose one of them.
+                </p>
+                <form>
+                    <div class="form-group text-white mb-4 col-lg-8 col-xl-7 col-xxl-5">
+                      <label class="mb-3" for="exampleInputEmail1" >Longitudinal Value</label>
+                      <input type="number" class="form-control" id="LongitudinalValue" [(ngModel)]="enteredLongitude" placeholder="Enter Longitudinal Value" min="-180" max="180" required style="border-color: black;" pattern="[0-9]{4,}">
+                    </div>
+                    <div class="form-group text-white mb-5 col-lg-8 col-xl-7 col-xxl-5">
+                      <label class="mb-3" for="Latitudinal Value">Latitudinal Value</label>
+                      <input type="number" class="form-control" id="LatitudinalValue" [(ngModel)]="enteredLatitude" placeholder="Enter Latitudinal Value" min="-180" max="180" required style="border-color: black;">
+                    </div>
+                    <div class="form-group d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                        <a class="btn btn-warning btn-lg px-4 me-sm-3" (click)="scrollDown()">Choose Media</a>
+                    </div>
+                </form>
+            </div>
+          </div>
+          <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+            <img class="img-fluid rounded-3 my-5 col-xl-10 col-xxl-12" src="https://c1.peakpx.com/wallpaper/817/255/791/stairs-lights-public-transportation-underground-wallpaper-preview.jpg">
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-5 my-5">
+      <div class="row gx-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+          <div class="text-center">
+            <h2 class="fw-bolder">Hello, Users</h2>
+            <p class="lead fw-normal text-muted mb-5">
+              We are ready to assist you to the best of our abilities. Please let
+              us know what media you want.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-4 px-lg-5 mb-5 card_1">
+      <div class="row gx-4 gx-lg-5">
+        <div class="col-sm-3">
+          <div class="card h-100 shadow border-0 w-85">
+            <div class="card-body">
+              <h2 class="card-title text-center mb-5">Tuk</h2>
+              <img class="card-img-top px-lg-4 mb-5" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_558,h_372/v1648431773/assets/1d/db8c56-0204-4ce4-81ce-56a11a07fe98/original/Uber_Auto_558x372_pixels_Desktop.png">
+              <p class="card-text text-center" >
+                Hi Riders, Click here to select Tuk
+              </p>
+              <button (click)="searchVehicles()">Search</button>
+              <div *ngIf="vehicleId !== null">
+                <p>Vehicles: {{ vehicleId }}</p>
+              </div>
+              <div *ngIf="noMatchFound">
+                <p>No matching Vehicle found.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card h-100 shadow border-0 w-85">
+            <div class="card-body">
+              <h2 class="card-title text-center">ZIP</h2>
+              <img class="card-img-top mb-4" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco/v1554506931/navigation/UberTaxi.png">
+              <p class="card-text text-center" >
+                Hi riders, Click here to select Zip
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card h-100 shadow border-0 w-85">
+              <div class="card-body">
+                <h2 class="card-title text-center mb-5">Moto</h2>
+                <img class="card-img-top px-lg-4 mb-5" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_637/v1649231091/assets/2c/7fa194-c954-49b2-9c6d-a3b8601370f5/original/Uber_Moto_Orange_312x208_pixels_Mobile.png">
+                <p class="card-text text-center " >
+                  Hi riders, Click here to select moto
+                </p>
+             </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card h-100 shadow border-0 w-85 ">
+              <div class="card-body">
+                <h2 class="card-title text-center mb-5">Van</h2>
+                <img class="card-img-top px-lg-4 mb-5" src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1568134115/assets/6d/354919-18b0-45d0-a151-501ab4c4b114/original/XL.png">
+                <p class="card-text text-center" >
+                  Hi riders, Click here to select van
+                </p>
+             </div>
+            </div>
+        </div>
+    </div>  
+  </div>

@@ -1,0 +1,180 @@
+.outer{
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #1A2238;
+    margin: auto;
+    margin: 30px auto;
+    display: flex;
+    margin-top: 0;
+    z-index: 99;
+}
+
+#companyname{
+    color: white;
+    padding-left: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.nav a{
+    position: relative;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px; 
+    margin-top: 15px;    
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+}
+
+.nav a:hover::after{
+    transform: scaleX(1)
+}
+
+.nav .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.nav .btnLogin-popup:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.footer{
+    width: 100%;
+    height: 60px;
+    background-color: #1A2238;
+    margin: 183px auto;
+    display: flex;
+    z-index: 99;
+    align-items: center;
+    padding-left:1000px;
+}
+
+.footer a{
+    position: relative;
+
+    font-size: 0.8rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px; 
+    margin-top: 4px;    
+}
+
+.footer a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+
+}
+
+.footer a:hover::after{
+    transform: scaleX(1)
+}
+
+.container{
+    background-color: #1A2238;
+    min-height: 440px;
+    box-shadow: 20px 20px 80px rgb(218, 218, 218);
+    border-radius: 12px;
+    margin-top: 100px;
+    width: 440px;
+    height: 550px;
+}
+.heading{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.paragraph{
+    color: #fff;
+    text-align: center;
+}
+.p1{
+    margin-bottom: 30px;
+}
+.Phone{
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+}
+.arrow{
+    margin-left: 10px;
+}
+/* .p2{
+    background-color: #fff;
+    color: #1A2238;
+    border-radius: 5px;
+    width: 160px;
+    height: 30px;
+    margin-left: 130px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 50px;
+} */
+
+.btn{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.p4{
+    margin-top: 30px;
+}
+
+.resendotp{
+    text-decoration: none;
+}
+
+.otp{
+    margin-top: 30px;
+    margin-left: 125px;
+}
+
+.timer{
+    margin-top: 30px;
+    color: #fff;
+}
+
+.error-email{
+    margin-top: 15px;
+}

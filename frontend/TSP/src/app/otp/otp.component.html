@@ -1,0 +1,54 @@
+<div class="outer">
+    <div class="navbar">
+        <h2 id="companyname">TSP</h2>
+        <div class="nav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Help</a>
+            <button class="btnLogin-popup" routerLink="/sign-in">Sign In</button>
+        </div>
+    </div>
+ 
+    <form novalidate [formGroup]="LoginForm">
+    <div class="container">
+        <h3 class="heading">OTP Verification</h3>
+        <!-- <div class="paragraph">
+            <p class="p1">We Will send you a one time password on<br>this  Mobile Number</p>
+            <input type="text" class="Phone" formControlName="mobctrl" placeholder="Phone Number" maxlength="10" minlength="10">
+            
+            <button><i class="arrow fa-solid fa-arrow-right fa-xl"></i></button> <br>
+            <label class="text-danger error-email" *ngIf="getError(LoginForm.get('mobctrl'))">
+                {{
+                    getError(LoginForm.get('mobctrl'))
+                }}
+            </label>
+        </div> -->
+        <div class="otp">
+            <ngx-otp-input class="otp" [config]="otpInputConfig" (otpChange)="handleotpChange($event)" (fill)="handleFillEvent($event)"></ngx-otp-input>
+        </div>
+        <div class="timer">
+            <h5 class="text-center">00 : {{num1}}</h5>
+        </div>
+
+        <div class="paragraph">
+            <p class="p4">Do not send OTP ?  <a href="" class="resendotp"> Send OTP again</a></p>
+        </div>
+        <div class="submit" rou>
+            <button type="button" class="btn btn-primary" routerLink="/privacy-terms" [disabled]="!LoginForm.valid">Submit</button>
+        </div>
+    </div>
+    </form>
+
+    <div class="footer">
+        <a href="">T & C</a>
+        <a href="">Privacy policy</a>
+        <a href="">Software service Agreement</a>
+        <a href="">Careers</a>
+        <a href="">Contact Us</a>
+        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>

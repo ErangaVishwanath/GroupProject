@@ -1,27 +1,31 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { WaitTillPickupComponent } from './wait-till-pickup/wait-till-pickup.component';
-import { ConfirmBookingComponent } from './confirm-booking/confirm-booking.component';
-import { ChoosePaymentMethodComponent } from './choose-payment-method/choose-payment-method.component';
-import { CardPaymentComponent } from './card-payment/card-payment.component';
-import { MeetTaxiComponent } from './meet-taxi/meet-taxi.component';
-import { PaymentDoneComponent } from './payment-done/payment-done.component';
-import { PassengerDetailsComponent } from './passenger-details/passenger-details.component';
-import { NewRideComponent } from './new-ride/new-ride.component';
-import { DropPassengerComponent } from './drop-passenger/drop-passenger.component';
+
+import { PassengerProfileDefaultComponent } from './passenger-profile-default/passenger-profile-default.component';
+import { PassengerEditComponent } from './passenger-edit/passenger-edit.component';
+import { AnothereEmailComponent } from './anothere-email/anothere-email.component';
+import { PasswordComponent } from './password/password.component';
+import { HelpComponent } from './help/help.component';
+import { HelpRidersComponent } from './help-riders/help-riders.component';
+import { ContactComponent } from './contact/contact.component';
+import { LostPropertyComponent } from './lost-property/lost-property.component';
+import { ComplaintComponent } from './complaint/complaint.component';
+import { ChatbotComponent } from './chatbot/chatbot.component';
+
 
 const routes: Routes = [
-  {path: "", redirectTo:"origin",pathMatch:"full"},
-  {path:'wait',component: WaitTillPickupComponent},
-  {path:'confirm',component:ConfirmBookingComponent},
-  {path:'method',component:ChoosePaymentMethodComponent}, 
-  {path:'card',component: CardPaymentComponent},
-  {path:'meet',component: MeetTaxiComponent},
-  {path:'cash',component:PaymentDoneComponent},
-  {path:'ride',component:NewRideComponent},
-  {path:'drop',component:DropPassengerComponent},
-  {path:'pickup',component: PassengerDetailsComponent}];
-  // {path:'noti',component: NotificatioPageComponent}];
+  {path:"",redirectTo:"PassengerProfile",pathMatch:"full"},
+  {path:'PassengerProfile',component: PassengerProfileDefaultComponent},
+  {path: 'PassengerEdit', component: PassengerEditComponent},
+  {path: 'AnotherEmail', component: AnothereEmailComponent},
+  {path: 'ChangePassword', component: PasswordComponent},
+  {path: 'Help',component: HelpComponent},
+  {path: 'HelpRiders', component: HelpRidersComponent},
+  {path: 'Contact', component: ContactComponent},
+  {path: 'LostProperty',component: LostPropertyComponent},
+  {path: 'Complaint', component: ComplaintComponent},
+  {path: 'ChatMaster', component: ChatbotComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

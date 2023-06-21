@@ -1,0 +1,27 @@
+<div class="mainDiv">
+    <form id="gmail-form" [formGroup]="formg" (ngSubmit)="submit()">
+        <div class="cardStyle">
+            <h2 class="formTitle">
+                Add another email
+            </h2>
+
+            <div class="inputDiv form-group">
+                
+                <input type="email" id="email" name="email"required="required" formcontrolName="email"
+                    class="form-control" formControlName="email" placeholder="Enter another email">
+                    
+                <span>
+                    Email required
+                </span>
+            </div>
+            <div class="form-group buttonWrapper">
+                <button type="submit" class="btn btn-info custom-btn submitButton" [disabled]="!formg.valid">
+                    Save
+                </button>
+            </div>
+        </div>
+    </form>
+    <div class="video">
+        <video class="cont" src="assets/Video 1.mp4" autoplay loop></video>
+    </div>
+</div> 

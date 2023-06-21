@@ -1,0 +1,16 @@
+.Request {
+    width: 100%;
+  }
+  
+  .Req-body {
+    border: none;
+    width: 600px;
+    padding-top: 150px;
+    padding-left: 100px;
+  }
+  
+  .body-img {
+    border: none;
+    width: 100px;
+  }
+  

@@ -1,0 +1,85 @@
+<div class="container rounded bg-white mt-0 mb-5 ">
+    <div class="row">
+        <!--side nav bar-->
+        <div class="col-md-3 border-right mt-5 pt-5">
+            <div class="list-group list-group-flush sidebar">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3 Dashboard side-list-item"
+                    href="#!">Ride Now</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3 side-list-item" href="#!">My
+                    Activities</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3 side-list-item"
+                    href="#!">Payment Method</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3 activeTab side-list-item "
+                    href="#!">My Profile</a>
+            </div>
+        </div>
+        <!--form starts-->
+        <div class="col-md-5 border-right ">
+            <form id="contact-form" [formGroup]="form" (ngSubmit)="submit()">
+                <div class="p-3 py-5 controls">
+                    <!--name and profile picture-->
+                    <div class="d-flex justify-content-between align-items-center mb-0">
+                        <img src="assets\profile4to.jpg" alt="" width="100px">
+                        <h2 class="text-center px-5 name">{{passenger.firstName}} {{passenger.lastName}}</h2>
+                    </div>
+                    <!--validation part starts-->
+                    <div class="row mt-2 form-group">
+                        <div class="col-md-6 form-group mb-3"><label class="labels mb-2">First Name</label>
+                            <input type="text" id="fname" required="required" [(ngModel)]="firstname"
+                                [ngModelOptions]="{standalone: true}" class="form-control" placeholder="First name"
+                                value="" >
+
+                        </div>
+                        <div class="col-md-6 form-group mb-3"><label class="labels mb-2">Last name</label>
+                            <input type="text" [(ngModel)]="lastname" [ngModelOptions]="{standalone: true}"
+                                class="form-control" placeholder="Last name">
+                        </div>
+                        <div class="col-md-12 form-group mb-3"><label class="labels mb-2">Mobile Number</label>
+                            <input type="text" class=" form-control" placeholder="Mobile Number" name="mobileno"
+                                id="mobileno" [(ngModel)]="mobileno" [ngModelOptions]="{standalone: true}">
+                        </div>
+                        <div class="col-md-12 form-group mb-2"><label class="labels">Email</label> <br><label
+                                class="email">{{passenger.email}}</label></div>
+                        <div class="col-md-12 form-group mb-2"><label class="labels">Another Email</label> <br><label
+                                class="email">{{passenger.anotheremail}}</label></div>
+                        <a href="" routerLink="/AnotherEmail"><button class="btn btn-primary btndefault  "
+                                type="button">Add
+                                another email</button></a>
+                        <div class="col-md-12 form-group mb-3"><label class="labels mb-2">Change Password</label><br>
+                            <a routerLink="/ChangePassword"><button class="btn btn-primary btndefault"
+                                    type="button">Update</button></a>
+                        </div>
+                    </div>
+                    <!--Validation part ends-->
+                    <!--location-->
+                    <div class="row mt-4 mb-3 ">
+                        <div class="col-md-6 form-group"><label class="labels mb-2">Location</label>
+                            <input type="text" class=" form-control" [(ngModel)]="location"
+                                [ngModelOptions]="{standalone:true}" placeholder="Location">
+                        </div>
+                    </div>
+                    <div class="mt-4 text-center form-group mb-3">
+                        <button type="submit" class="btn btn-info custom-btn submitButton" [disabled]="!form.valid">Save
+                            Changes</button>
+                    </div>
+                    <hr>
+                    <div class="mt-4 text-left"><button class="btn  btn-danger" type="button">Logout</button>
+                    </div>
+                </div>
+            </form>
+            <!-- </form> -->
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 py-5">
+                <div class="px-5">
+                    <img src="assets\taxi1.jpeg" alt="" width="350px">
+                </div>
+                <div class="sidetext">
+                    <h5 id="text-left">Get a ride in one minute</h5>
+                    <p id="text-left-p">Click here to get a ride from the web browser</p>
+                    <a href=""><button class="btn btn-primary request " type="button">Request Ride</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
